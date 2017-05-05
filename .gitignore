@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>开奖大厅</title>
+        <link rel="stylesheet" href="css/iconfont.css"/>
+        <link rel="stylesheet" href="css/font.css"/>
+        <link rel="stylesheet" href="css/weui.min.css"/>
+        <link rel="stylesheet" href="css/jquery-weui.min.css"/>
+        <link rel="stylesheet" href="css/mui.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="stylesheet" href="css/pages/tasks.css"/>
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/banner-he.js"></script>
+    <script type="text/javascript" src="js/banner.js"></script>
+    
+        
+        <script>(function (doc, win) {
+          var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+            };
+
+          if (!doc.addEventListener) return;
+          win.addEventListener(resizeEvt, recalc, false);
+          doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);</script>
+    </head>
+    <body>
+        <header>
+            <div class="titlebar reverse">
+                <h1>首页</h1>
+            </div>
+        </header>
+        <article style="bottom: 54px;">  
+<!--         轮流图片 -->
+        
+                    <div class="demo-item">
+                <div class="demo-block">
+                    <div class="ui-slider" style="padding-top:49.25%">
+                        <ul class="ui-slider-content" style="width: 300%">
+                            <li><span id="banner1" ></span></li>
+                            <li><span id="banner2" ></span></li>
+                            <li><span id="banner3" ></span></li>
+                            <li><span id="banner4" ></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <script class="demo-script">
+                    $(window).scroll(function () {
+                        if ($(window).scrollTop() > 0) {
+                            $("#headsearch").addClass("ui-form-color-nav");
+                        }else if($(window).scrollTop() == 0){
+                            $("#headsearch").removeClass("ui-form-color-nav");
+                        }
+                    });
+                    (function (){
+                        var slider = new fz.Scroll('.ui-slider', {
+                            role: 'slider',
+                            indicator: true,
+                            autoplay: true,
+                            interval: 5000
+                        });
+
+                        slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                            console.log(fromIndex,toIndex)
+                        });
+
+                        slider.on('scrollEnd', function(cruPage) {
+                            console.log(cruPage)
+                        });
+                    })();
+                </script>
+            </div>
+        </article>
+            <article style="bottom: 54px;">
+            <div class="weui_cells weui_cells_access animated fadeInRight" style="width:95%;margin:0 auto">
+              <a class="weui_cell" href="javascript:;">
+                <div class="weui_cell_bd weui_cell_primary" style="padding:0">
+                 <p style="color:black;">pk10 <span style=";margin-left:20px;color:red;font-size:10px;">第591535期</span>
+                 <span style="color:red;text-algin:right;float:right;font-size:10px;color:black;line-height:23px;">投注截止:<span id="riqi" >00</span>时<span id="riqi">02</span>分<span id="riqi">08</span>秒</span> 
+                 </p>
+                <div  id="bNav" class="bNav">
+                <ul id="kaijiangshu">
+                <li  style="margin-left:0">1</li>
+                <li >2</li>
+                <li >3</li>
+                <li >4</li>
+                <li >5</li>
+                <li>6</li>
+                </ul>
+                 </div> 
+                </div>
+              </a>
+            </div>
+        </article>
+                <article style="bottom: 54px;">
+            <div class="weui_cells weui_cells_access animated fadeInRight">
+              <a class="weui_cell" href="notice.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                  <span id="tongzhi" ></span> <p id="yujiang" > 预祝你中奖</p>
+                </div>
+                <div class="iconfont">&#xe642;</div>
+              </a>
+              
+            </div>
+        </article>
+                <article >
+            <div class="weui_cells weui_cells_access animated fadeInRight">
+              <a class="weui_cell" href="notice_detail.html?id=1&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span><p class="info" id="yujiang">彩民喜中1000万 在外地出差得知中奖立即赶回</p>
+                </div>
+              </a>
+               <a class="weui_cell" href="notice_detail.html?id=2&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span>  <p class="info" id="yujiang">胜负彩第17026期开奖：头奖开345注47415元</p>
+                </div>
+              </a>
+               <a class="weui_cell" href="notice_detail.html?id=3&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span>  <p class="info" id="yujiang">广东体彩“11选5”4500万元大派送即将开启</p>
+                </div>
+              </a>
+               <a class="weui_cell" href="notice_detail.html?id=4&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span>  <p class="info" id="yujiang">大乐透17022期分析预测推荐：前三胆03 12 25</p>
+                </div>
+              </a>
+               <a class="weui_cell" href="notice_detail.html?id=5&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span>  <p class="info" id="yujiang">七乐彩17022期分析预测推荐：看好小数反击</p>
+                </div>
+              </a>
+              <a class="weui_cell" href="notice_detail.html?id=6&back=index.html">
+                <div class="weui_cell_bd weui_cell_primary">
+                   <span id="tongzhi" ></span>  <p class="info" id="yujiang">排列五第17050期分析预测推荐：单挑一注34075</p>
+                </div>
+              </a>
+            </div>
+        </article>
+        
+        
+        
+        <footer>
+            <ul class="menubar animated fadeInUp delay3">
+                <li class="tab   active" onclick="window.location='index.html'">
+                    <i class="iconfont">&#xe63c;</i>
+                    <label class="tab-label">首页</label>
+                    <span class="point"></span>
+                 
+                </li>
+                  <li class="tab" onclick="window.location='notice.html'">
+                    <i class="iconfont">&#xe63f;</i>
+                    <label class="tab-label">资讯</label>
+                    <span class="point"></span>
+                </li>
+                <li class="tab" onclick="window.location='tasks.html'">
+                    <i class="iconfont">&#xe63d;</i>
+                    <label class="tab-label">开奖</label>
+                    <span class="point"></span>
+                </li>
+              
+            </ul>
+        </footer>
+    </body>
+    
+</html>
